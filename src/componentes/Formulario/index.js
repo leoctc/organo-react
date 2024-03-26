@@ -12,7 +12,7 @@ const Formulario = ({ cadastrarColaborador, times, cadastrarTime }) => {
   const [nomeTime, setNomeTime] = useState("");
   const [corTime, setCorTime] = useState("");
 
-  const criarColabordor = (event) => {
+  const criarColaborador = (event) => {
     event.preventDefault();
     console.log("form enviado", nome, cargo, imagem, time);
     cadastrarColaborador({
@@ -30,7 +30,7 @@ const Formulario = ({ cadastrarColaborador, times, cadastrarTime }) => {
 
   return (
     <section className="formulario-container">
-      <form className="formulario" onSubmit={criarColabordor}>
+      <form className="formulario" onSubmit={criarColaborador}>
         <h2>Preencha os dados para criar o card do colaborador.</h2>
         <Campo
           obrigatorio={true}
